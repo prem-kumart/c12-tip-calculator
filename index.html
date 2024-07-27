@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <header>
+        <img src="images/logo.svg" alt="logo picture"/>
+  </header>
+ <main>
+  
+      <div class="bill-tip-section">
+      <section class="bill-section">
+        <p>Bill</p>
+      <input  dir="rtl" type="number" id="bill-input" value="0" required/>
+      </section>
+      <section class="tip-section">
+        <p>Select Tip %</p>
+        <div class="tip-grid">
+           <button class="five-percent tip">5%</button>
+           <button class="ten-percent tip">10%</button>
+           <button class="fifteen-percent tip">15%</button>
+           <button class="twentyfive-percent tip">25%</button>
+           <button class="fifty-percent tip">50%</button>
+           <input dir='rtl' id="custom-tip" type="text" value="Custom"/>
+        </div>
+      </section>
+      <section class="people-section">
+        <div class="people">
+          <p>Number of People</p>
+          <p class="form-warning">Can't be Zero</p>
+        </div>
+        <input dir="rtl" type="number" id="num-of-people" value="0"/>
+      </section>
+    </div>
+
+    <div class="total-section">
+        <div class="calculate">
+              <div >
+                <p>Tip Amount</p>
+                <p class="person">/ person</p>
+              </div> 
+              <h2 class="tip-per-person">$0.00</h2>
+        </div>
+        <div class="calculate">
+            <div>
+                <p>Total</p>
+                <p class="person">/ person</p>
+            </div>
+            <h2 class="total-per-person">$0.00</h2>
+        </div>
+        <button class="reset">RESET</button>
+      </div>
+
+ </main>
+
+</body>
+</html>
